@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,4 +21,7 @@ public class Course {
     private String courseName;
     @Column(name = "author", length = 100)
     private String author;
+    private LocalDateTime createDateTime;
+    private LocalDateTime updateDateTime;
+    private String ipAddress;
 }
